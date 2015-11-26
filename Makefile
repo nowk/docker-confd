@@ -1,13 +1,8 @@
 
 VERSION=0.10.0
 
-get-confd:
-	curl -o ./confd -L https://github.com/kelseyhightower/confd/releases/download/v$(VERSION)/confd-$(VERSION)-linux-amd64
-	sudo chmod 755 ./confd
-
-build-docker: get-confd
+build-docker:
 	docker build -t nowk/confd:$(VERSION) .
-	rm ./confd
 
 push:
 	docker push nowk/confd:$(VERSION)
