@@ -1,11 +1,12 @@
+NAME=nowk/confd
+VERSION=0.10.0-nginx1.9.7
 
-VERSION=0.10.0
+default=$(VERSION)
 
-build-docker:
-	docker build -t nowk/confd:$(VERSION) .
+$(VERSION):
+	docker build -t $(NAME):$(VERSION) .
 
 push:
-	docker push nowk/confd:$(VERSION)
+	docker push $(NAME):$(VERSION)
+.PHONY: push
 
-
-.PHONY: get-confd push
