@@ -8,7 +8,7 @@ ENV CONFD_VERSION 0.10.0
 RUN apt-get update \
 	&& apt-get install -y \
 		wget \
-		netcat
+		netcat-openbsd
 
 RUN wget -O /usr/bin/confd \
 	https://github.com/kelseyhightower/confd/releases/download/v${CONFD_VERSION}/confd-${CONFD_VERSION}-linux-amd64 \
