@@ -4,7 +4,7 @@ VERSION=0.10.0-nginx1.9.7
 default=$(VERSION)
 
 $(VERSION):
-	docker build -t $(NAME):$(VERSION) .
+	docker build --no-cache -t $(NAME):$(VERSION) .
 
 push:
 	docker push $(NAME):$(VERSION)
