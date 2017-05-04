@@ -1,7 +1,7 @@
 FROM nginx:1.9.7
 MAINTAINER Yung Hwa Kwon <yung.kwon@damncarousel.com>
 
-ENV CONFD_VERSION 0.10.0
+ENV CONFD_VERSION 0.11.0
 
 # install dependencies
 # netcat (nc) for docker.sock calls

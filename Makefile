@@ -1,5 +1,5 @@
 NAME=nowk/confd
-VERSION=0.10.0-nginx1.9.7
+VERSION=0.11.0-nginx1.9.7
 
 default=$(VERSION)
 
